@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.technowomen.Meetup">
+    <android.support.v4.widget.NestedScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="-378dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+     </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>
+
+<RelativeLayout
+    android:id="@+id/design_bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="30dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+    <TextView
+        android:id="@+id/bottomsheet_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="MY TODO List(SCROLL UP)\n 1.3.18\t  Meetup @4pm\n2.3.10\t  Attend Workshop\n 4.3.10\t Visit Job Fair"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"/>
+
+</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
